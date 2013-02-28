@@ -30,7 +30,7 @@ def decode(s):
 
 # Checks the request object to see if the call was successful
 def issuccessful(request):
-	if 199 < request.status_code and request.status_code < 299:
+	if 200 <= request.status_code and request.status_code <= 299:
 		return True
 	else:
 		return False
